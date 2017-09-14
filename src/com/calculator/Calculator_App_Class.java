@@ -27,7 +27,6 @@ public class Calculator_App_Class extends JFrame implements ActionListener{
     private double tempFirst = 0.0;
     private int i;
 
-
     public static void main(String[] args) {
 
         try {
@@ -37,10 +36,8 @@ public class Calculator_App_Class extends JFrame implements ActionListener{
             System.out.println("Could not load System look.");
         }
 
-
         new Calculator_App_Class();
     }
-
 
     public Calculator_App_Class() {
 
@@ -51,8 +48,6 @@ public class Calculator_App_Class extends JFrame implements ActionListener{
     sendUI(this);
 
     }
-
-
 
     private void sendMenuBar() {
         menuBar = new JMenuBar();
@@ -196,8 +191,6 @@ public class Calculator_App_Class extends JFrame implements ActionListener{
                 setTempFirst(Double.parseDouble(display.getText()));
                 display.setText("0");
                 operation[0] = true;
-
-
             }
         });
         add(plus);
@@ -214,8 +207,6 @@ public class Calculator_App_Class extends JFrame implements ActionListener{
                 if (display.getText().length() > 13)
                     return;
                 display.setText(display.getText() + ".");
-
-
             }
         });
         add(dod);
@@ -421,7 +412,6 @@ public class Calculator_App_Class extends JFrame implements ActionListener{
                 setTempFirst(0);
                 for (i=0;i<=3;i++)
                     operation[i] = false;
-
             }
         });
         add(equals);
